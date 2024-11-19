@@ -1,11 +1,9 @@
-import requests
 import json
 
-from IPython.core.magics.execution import Timer
+import requests
 
 from config import headers
-import time
-from datetime import datetime
+
 
 def get_price_list(page=1,pageSize=10):
   url ='http://192.168.26.1/kapi/hbos-hsc/admin/price/page'
