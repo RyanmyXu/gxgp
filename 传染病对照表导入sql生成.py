@@ -3,7 +3,10 @@ from dask.config import update
 import config
 import pandas as pd
 
-mapp=pd.read_excel('/Users/ryan/Desktop/mapping.xlsx')
+from config import path_excel
+
+path_excel='/Users/ryan/Desktop/mapping.xlsx'
+mapp=pd.read_excel(path_excel)
 
 print(f"shape:{mapp.shape}" )
 print(mapp.columns[0])
