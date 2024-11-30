@@ -1,4 +1,5 @@
 import config
 import pandas as pd
 
-pd.read_excel()
+myex=pd.read_excel('/Users/ryan/Desktop/mapping.xlsx')
+print(myex)
